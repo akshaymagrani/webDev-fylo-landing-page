@@ -1,0 +1,516 @@
+/**### Primary
+
+- Very Dark Blue: hsl(243, 87%, 12%)
+- Desaturated Blue: hsl(238, 22%, 44%)
+
+### Accent
+
+- Bright Blue: hsl(224, 93%, 58%)
+- Moderate Cyan: hsl(170, 45%, 43%)
+
+### Neutral
+
+- Light Grayish Blue: hsl(240, 75%, 98%)
+- Light Gray: hsl(0, 0%, 75%)
+
+font-family: 'Raleway', sans-serif;
+font-family: 'Open Sans', sans-serif;
+
+*/
+*{
+    padding: 0;;
+    margin: 0;
+}
+html{
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+/*section1*/
+h1.head {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+}
+.nav > ul{
+    list-style-type: none;
+    display: flex;
+    float: right;
+}
+ul{
+    list-style-type: none; /*ul on the section */
+}
+ul > a{
+    text-decoration: none;  
+    color:black;
+    padding:0.3em;
+    margin:1.8em 0.3rem;
+}
+a:hover {
+    color:hsl(224, 93%, 58%);
+}
+.text, .button1{
+    border-radius: 2px;
+    border: none;
+}
+.button1{
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+}
+.text{
+    border:1px solid black;
+}
+/*section 2*/
+.section2 {
+    background-color: hsl(240, 75%, 98%);
+}
+/*section 3*/
+.section3{
+    background-color: hsl(238, 22%, 44%);
+    color:white;
+}
+/*section 4*/
+.section4{
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+}
+/*footer*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media only screen and (max-width:375px) {
+    html{
+        font-size:16px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .section1 {
+        padding: 1.5rem 1rem;
+        margin:0 auto;
+    }
+    .logo{
+        width:5rem;
+        height:2rem;
+        position:absolute;
+        top:1.6em;
+        left:1.6rem;
+    }
+    .list1{
+        font-size: 0.8rem;
+    }
+    .sec1-div-img, .sec1-image, .sec2-div-img, .sec2-image{
+        width:100%;
+        height:auto;
+        margin:1.4rem 0;
+    }
+    .sec2-div-img, .sec1-div-img{
+        width:100%;
+    }
+    .sec1-image, .sec2-image{
+        display: block;
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+    .sec1-div-form{
+        display: block;
+        width:100%;
+        padding:0.4rem;
+        margin:0.2rem;
+    }
+    .head{
+        padding: 1rem 0.4rem;
+        margin: 0.5rem 0.4rem;
+    }
+    .content{
+        padding: 1rem 0.2rem;
+        margin: 0.5rem 0.2rem;
+        font-size: 0.9rem;
+    }
+    .sec1-div-form{
+        width:100%;
+        padding: 1rem 0;
+        margin: 0.5rem;
+        text-align: center;
+    }
+    .text, .button1{
+        display: inline-block;
+        padding:0.8rem 0 0.8rem 0.8rem;
+        margin:0.5rem 0;
+        width: 85%;
+    }
+    /*section 2*/
+    .section2{
+        text-align: left;
+    }
+    .sec2-head{
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 2rem 0;
+    }
+    .sec2-content{
+        padding: 1rem;
+        
+    }
+    .sec2-a{
+        text-align: center;
+        color: green;
+        padding:2rem 0;
+        margin:1rem;
+        display: block;
+    }
+    .sec2-div-quote{
+        display: block;
+        box-shadow: 0 5px 10px lightgrey;
+        padding: 1.5rem 0.8rem;
+        margin: 2rem 1.5rem 6rem;
+        font-size: 0.8rem;
+    }
+    .kevin{
+        display: flex;
+        align-items: center;
+    }
+    .sec2-avatar{
+        width:15%;
+        height:15%;
+        border-radius: 50%;
+        padding: 0.4rem;
+    }
+    .name{
+        line-height: 0.6rem;
+    }
+    /*section 3*/
+    .section3{
+        padding:2rem;
+        margin:0;
+    }
+    .sec3-head{
+        font-size: 1.2rem;
+        padding:1rem 0;
+    }
+    .sec3-content{
+        font-size: 0.9rem;
+        padding: 1rem;
+    }
+    .sec3-div-form{
+        padding:2rem 1rem;
+        display:flex;
+        flex-direction: column;
+    }
+    .email2, .button2{
+        padding:0.5rem;
+        margin:0.5rem;
+        border-radius:2px;
+    }
+    .button2{
+        background-color: hsl(224, 93%, 58%);
+        color:white;
+        border: none;
+    }
+    /*section 4*/
+    .section4{
+        padding:3rem 2rem;
+        text-align: left;
+        font-size:0.9rem;
+    }
+    .sec4-logo{
+        color:white;/*will probably have to change in svg or research how to change color for svg*/
+        margin:1rem 0;
+        width:8rem;
+        height:2.5rem;
+    }
+    .container{
+        margin:2rem 0;
+    }
+    .sec4-phone, .sec4-email{
+        display: flex;
+    }
+    .icon-phone,.icon-email{
+        padding:0.5rem;
+    }
+    .list2{
+        margin:2rem 0;
+    }
+    .ul >li {
+        margin:1rem 0;
+    }
+    .logo-lic, .brand{
+        display: flex;
+        justify-content: center;
+    }
+    .logo-lic{
+        padding:0.5rem;
+    }
+    .brand{
+        color:white;
+        background-color: hsl(243, 87%, 12%);
+        width:25px;
+        height:25px;
+        border:1px solid white;
+        border-radius: 25px;
+        margin:0.4rem;
+    }
+
+}
+@media only screen and (min-width:375px) {
+    html{
+        font-size:18px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo{
+        width:6rem;
+        height:1.8rem;
+        position:absolute;
+        top:1.6em;
+        left:1.6rem;
+    }
+    .section1 {
+        padding: 1.5rem 1rem;
+        margin:0 auto;
+    }
+    .list1{
+        font-size: 0.8rem;
+        margin-right:2rem;
+    }
+    .sec1-div-img, .sec1-image, .sec2-div-img, .sec2-image{
+        width:100%;
+        height:auto;
+        margin:auto 0;
+    }
+    .sec1-image, .sec2-image{
+        display: block;
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+    .sec1-div-form{
+        display: flex;
+        padding:0.4rem;
+        margin:0.2rem;
+    }
+    .head{
+        padding: 1rem;
+        margin: 0.5rem 1rem;
+    }
+    .content{
+        padding: 1rem;
+        margin: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .sec1-div-form{
+        display: block;
+        padding: 1rem;
+        margin: 0.5rem;
+        text-align: center;
+    }
+    .text, .button1{
+        display: inline-block;
+        padding:0.8rem;
+        margin:0.5rem 0.5rem;
+        width: 80%;
+    }
+    
+    /*section 2*/
+    .section2{
+        text-align: left;
+    }
+    .sec2-head{
+        font-size: 1.2rem;
+        margin:1rem;
+        text-align: left;
+        padding: 1.5rem 1rem;
+    }
+    .sec2-content{
+        padding: 1rem;
+        margin:0.2rem 1rem;
+        
+    }
+    .sec2-a{
+        text-align: left;
+        color: green;
+        padding:1rem 1rem;
+        margin:1rem;
+        display: block;
+    }
+    .sec2-div-quote{
+        display: block;
+        width:60%;
+        box-shadow: 0 5px 10px lightgrey;
+        padding: 1.5rem 1rem;
+        margin: 2rem 1.5rem 6rem 2rem;
+        font-size: 0.8rem;
+    }
+    .sec1-div-img{
+        display: block;
+        align-items: center;
+    }
+    .kevin{
+        display: flex;
+        align-items: center;
+    }
+    .sec2-avatar{
+        width:15%;
+        height:15%;
+        border-radius: 50%;
+        padding: 0.4rem;
+    }
+    .name{
+        line-height: 0.6rem;
+    }
+    /*section 3*/
+    
+    .sec3-head{
+        font-size: 1.2rem;
+        padding:1rem;
+        margin:1rem;
+    }
+    .sec3-content{
+        font-size: 0.9rem;
+        padding: 1rem;
+        margin:1rem;
+    }
+    .sec3-div-form{
+        padding:2rem 1rem;
+        display:flex;
+        flex-direction: column;
+    }
+    .email2, .button2{
+        padding:0.5rem;
+        margin:0.5rem;
+        border-radius:2px;
+    }
+    .button2{
+        background-color: hsl(224, 93%, 58%);
+        color:white;
+        border: none;
+    }
+    /*section 4*/
+    .section4{
+        padding:3rem 2rem;
+        text-align: left;
+        font-size:0.9rem;
+    }
+    .sec4-logo{
+        color:white;/*will probably have to change in svg or research how to change color for svg*/
+        margin:1rem 0;
+        width:8rem;
+        height:2.5rem;
+    }
+    .container{
+        margin:2rem 0;
+    }
+    .sec4-phone, .sec4-email{
+        display: flex;
+        padding: 0.5rem 0;
+    }
+    .icon-phone,.icon-email{
+        padding:0 0.5rem;
+    }
+    .list2{
+        margin:2rem 0;
+    }
+    .ul >li {
+        margin:1rem 0;
+    }
+    .logo-lic, .brand{
+        display: flex;
+        justify-content: center;
+    }
+    .logo-lic{
+        padding:0.5rem;
+        
+    }
+    .brand{
+        color:white;
+        background-color: hsl(243, 87%, 12%);
+        width:25px;
+        height:25px;
+        border:1px solid white;
+        border-radius: 25px;
+        margin:0.4rem;
+    }
+}
+@media only screen and (min-width:570px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .section1{
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+    }
+    .sec1-allcontent{
+        display: flex;
+        width:55%;
+        align-self: center;
+        flex-direction: column;
+    }
+    .sec1-div-form{
+        display: flex;
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+    .text{
+        width:70%;
+    }
+    .button1{
+        width:30%;
+    }
+    .section2{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .section3{
+        display: flex;
+    }
+    .sec3-div-content{
+        width:50%;
+    }
+    .sec3-div-form{
+        width:50%;
+        align-self: center;
+        margin-right:2rem;
+    }
+    .email2 {
+        width: 80%;
+    }.button2{
+        width:45%;
+    }
+    .section4{
+        display: flex;
+        width:100%;
+    }
+    .sec4-logo{
+        display: absolute;
+        bottom: 1rem;
+    }
+    .container{
+        display: block;
+        width:30%;
+    }
+    .list2{
+        width:25%;
+    }
+    .logo-lic{
+        width: 30%;
+        margin:2rem 0;
+        justify-content: left;
+    }
+    .sec4-phone{
+        margin:1rem 0;
+    }
+    .sec4-email{
+        margin:1rem 0;
+    }
+    .icon-phone,.icon-email{
+        padding:0 0.5rem;
+    }
+}
