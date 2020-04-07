@@ -37,11 +37,7 @@ h1.head {
     float: right;
 }
 ul{
-    list-style-type: none; /*ul on the section */
-}
-ul > a{
-    text-decoration: none;  
-    color:black;
+    list-style-type: none; /*ul on the section */ 
     padding:0.3em;
     margin:1.8em 0.3rem;
 }
@@ -62,6 +58,9 @@ a:hover {
 /*section 2*/
 .section2 {
     background-color: hsl(240, 75%, 98%);
+}
+.sec2-div-quote{
+    background-color: white;
 }
 /*section 3*/
 .section3{
@@ -98,6 +97,10 @@ a:hover {
     }
     .list1{
         font-size: 0.8rem;
+        
+    }
+    .list1 > li{
+        margin: 1rem;
     }
     .sec1-div-img, .sec1-image, .sec2-div-img, .sec2-image{
         width:100%;
@@ -117,7 +120,6 @@ a:hover {
         display: block;
         width:100%;
         padding:0.4rem;
-        margin:0.2rem;
     }
     .head{
         padding: 1rem 0.4rem;
@@ -139,6 +141,15 @@ a:hover {
         padding:0.8rem 0 0.8rem 0.8rem;
         margin:0.5rem 0;
         width: 85%;
+    }
+    .mobile-bg{
+        display:block;
+        margin:0;
+        width: 100%;
+        height:auto;
+    }
+    .desktop-bg{
+        display: none;
     }
     /*section 2*/
     .section2{
@@ -215,10 +226,12 @@ a:hover {
         font-size:0.9rem;
     }
     .sec4-logo{
-        color:white;/*will probably have to change in svg or research how to change color for svg*/
         margin:1rem 0;
         width:8rem;
         height:2.5rem;
+    }
+    .sec4-logo2{
+        color:white;
     }
     .container{
         margin:2rem 0;
@@ -277,6 +290,9 @@ a:hover {
         font-size: 0.8rem;
         margin-right:2rem;
     }
+    .list1 > li{
+        margin: 1rem;
+    }
     .sec1-div-img, .sec1-image, .sec2-div-img, .sec2-image{
         width:100%;
         height:auto;
@@ -314,6 +330,15 @@ a:hover {
         padding:0.8rem;
         margin:0.5rem 0.5rem;
         width: 80%;
+    }
+    .mobile-bg{
+        display:block;
+        margin:0;
+        width: 100%;
+        height:auto;
+    }
+    .desktop-bg{
+        display: none;
     }
     
     /*section 2*/
@@ -429,11 +454,11 @@ a:hover {
     .brand{
         color:white;
         background-color: hsl(243, 87%, 12%);
-        width:25px;
-        height:25px;
+        width:35px;
+        height:35px;
         border:1px solid white;
-        border-radius: 25px;
-        margin:0.4rem;
+        border-radius: 50%;
+        margin:2rem 0.5rem;
     }
 }
 @media only screen and (min-width:570px) {
@@ -446,6 +471,9 @@ a:hover {
         display: flex;
         flex-direction: row-reverse;
         text-align: left;
+    }
+    .list1 > li{
+        margin: 1rem;
     }
     .sec1-allcontent{
         display: flex;
@@ -464,6 +492,15 @@ a:hover {
     .button1{
         width:30%;
     }
+    .mobile-bg{
+        display:none;
+    }
+    .desktop-bg{
+        display: block;
+        margin:0;
+        width: 100%;
+        height:auto;
+    }
     .section2{
         display: flex;
         flex-direction: row-reverse;
@@ -481,16 +518,21 @@ a:hover {
     }
     .email2 {
         width: 80%;
-    }.button2{
+    }
+    .button2{
         width:45%;
     }
     .section4{
         display: flex;
         width:100%;
+        position: relative;
     }
     .sec4-logo{
-        display: absolute;
-        bottom: 1rem;
+        position: absolute;
+        top: 1rem;
+    }
+    .sec4-logo2{
+        color: white;
     }
     .container{
         display: block;
@@ -505,7 +547,7 @@ a:hover {
         justify-content: left;
     }
     .sec4-phone{
-        margin:1rem 0;
+        margin:45px 0 0;
     }
     .sec4-email{
         margin:1rem 0;
